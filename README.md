@@ -1,45 +1,17 @@
-1. Replace `<your_account>` with your Github username in the link
-    - [DEMO LINK](https://Peti51.github.io/js_2048_game/)
-2. Follow [this instructions](https://mate-academy.github.io/layout_task-guideline/)
-    - Run `npm run test` command to test your code;
-    - Run `npm run test:only -- -n` to run fast test ignoring linter;
-    - Run `npm run test:only -- -l` to run fast test with additional info in console ignoring linter.
+This is a short introduction to a 2048 game implemented in JavaScript.
 
-### Task: 2048 game
+The game is built using the 4x4 grid layout and contains functionality to slide and merge tiles in four directions: left, right, up, and down. The goal of the game is to reach the tile with a value of 2048.
 
-Hey! Are you ready for a real hard check of your JavaScript skills, ninja?
-If you are still here, let's do it.
+The game initializes with an empty board and displays a "Start" button. When the "Start" button is clicked, the game begins by generating two tiles with a value of 2 at random positions on the board.
 
-In this task, you need to implement the 2048 game like in [this reference](https://play2048.co/)
-Don't play for too long! We need you to write the code!
+The player can use the arrow keys on the keyboard to slide the tiles in the corresponding direction. Sliding the tiles merges tiles with the same value, and new tiles with a value of 2 are generated after each move. The score is updated based on the merged tile values.
 
-Okay, what do we have?
-1) HTML and CSS are already written. You can use it, or implement your own design if you want.
-2) Reference.
+If the player reaches a tile with a value of 2048, a "Winner" message is displayed, and the game can be restarted. If there are no more valid moves and the board is full, a "Game Over" message is displayed, and the game can be restarted.
 
-That's it!
+The game keeps track of the current score and the best score achieved. The scores are displayed on the screen.
 
-Okay, okay. Also, we have some rules:
-1) The game field is 4 x 4
-2) Each cell can be empty or contain one of the numbers: 2, 4, 8 ... 2^n
-3) The player can move cells with keyboard arrows
-4) All the numbers should be moved in the selected direction until all empty cells are filled in
-   - 2 equal cells should be merged into a doubled number
-   - The merged cell can’t be merged twice during one move
-5) The move is possible if at least one cell is changed after the move
-6) After move 2 or 4 appears in a random empty cell. 4 probability is 10%
-7) When 2048 value is displayed in any cell, win message should be shown.
-8) The `game over` message should be shown if there are no more available moves.
-9) Hide start message when game starts.
-10) Change the `Start` button to `Restart` after the first move.
-11) Increase score with each move. The score should be increased by the sum of all merged cells.
+To play again, the player can click the "Restart" button, which resets the board and starts a new game.
 
-Hints:
-- You have class `field-cell--%cell_value%`, for styling cell in the game.
-- Use `hidden` class for hiding elements on page.
-- Use `start`, `restart` classes for the main button for different styles.
-- Use `field-cell--%cell_value%` class like additional class, don't replace the main class.
+Overall, this JavaScript implementation provides the basic functionality of the popular 2048 game and allows players to enjoy the puzzle-solving experience.
 
-You can change the HTM/CSS layout if you need it.
-
-![Preview](./src/images/reference.png)
+here is the Demolink: "https://Peti51.github.io/js_2048_game/"
