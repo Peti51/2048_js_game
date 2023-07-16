@@ -4,15 +4,17 @@ The game is built using the 4x4 grid layout and contains functionality to slide 
 
 The game initializes with an empty board and displays a "Start" button. When the "Start" button is clicked, the game begins by generating two tiles with a value of 2 at random positions on the board.
 
-The player can use the arrow keys on the keyboard to slide the tiles in the corresponding direction. Sliding the tiles merges tiles with the same value, and new tiles with a value of 2 are generated after each move. The score is updated based on the merged tile values.
+Variables and Data Structures: The game tracks 'score' and 'best' values, has a 4x4 'board' array, and uses 'rows' and 'columns' to define the grid dimensions.
 
-If the player reaches a tile with a value of 2048, a "Winner" message is displayed, and the game can be restarted. If there are no more valid moves and the board is full, a "Game Over" message is displayed, and the game can be restarted.
+DOM Manipulation: 'document.getElementById()' accesses elements, 'document.createElement()' dynamically creates elements, and 'element.innerText' and 'element.classList' update content and styles.
 
-The game keeps track of the current score and the best score achieved. The scores are displayed on the screen.
+Event Listeners: The script responds to 'window.onload' and button clicks using event listeners.
 
-To play again, the player can click the "Restart" button, which resets the board and starts a new game.
+Game Logic: The initialization function sets up the game, including hiding elements and resetting scores. 
+Tile generation randomly generates tiles with values. Keyboard input handling responds to arrow key presses. Sliding and merging functions control tile movements.
+Game over conditions are checked. Tile updates visually represent changes on the board.
 
-Overall, this JavaScript implementation provides the basic functionality of the popular 2048 game and allows players to enjoy the puzzle-solving experience.
+Utility Functions: Functions filter zeros in a row and update tile visuals.
 
 In order to be able to start the project from vsCode ypou need to download the project to a folder named 'projects'.
 
