@@ -79,8 +79,10 @@ function setGame() {
 
   columnId.forEach((numberColumn) => {
     rowID.forEach((numberRow) => {
-      board[numberColumn][numberRow] = 2;
-      board[numberRow][numberColumn] = 2;
+      const probabilityOne = Math.floor(Math.random() * 10);
+      const probabilityTwo = Math.floor(Math.random() * 10);
+      board[numberColumn][numberRow] = probabilityOne === 1 ? 4 : 2;
+      board[numberRow][numberColumn] = probabilityTwo === 1 ? 4 : 2;
     });
   });
 
@@ -147,11 +149,12 @@ function setTwo() {
     const c = Math.floor(Math.random() * columns);
 
     if (board[r][c] === 0) {
-      board[r][c] = 2;
+      const probability = Math.floor(Math.random() * 10);
+      board[r][c] = probability === 1 ? 4 : 2;
 
       const tile = document.getElementById(r.toString() + '-' + c.toString());
 
-      tile.innerText = '2';
+      tile.innerText = probability === 1 ? '4' : '2';
 
       tile.classList.add('x2');
 
@@ -203,8 +206,6 @@ function handleKeyUp(e) {
     document.getElementById('loser').classList.add('hidden');
     document.getElementById('winner').classList.add('hidden');
     document.getElementById('start').classList.remove('hidden');
-    document.getElementById('startbutton').style.display = 'unset';
-    document.getElementById('restartbutton').style.display = 'none';
     throw new Error('Something went wrong.');
   }
 
