@@ -14,4 +14,6 @@ To play again, the player can click the "Restart" button, which resets the board
 
 Overall, this JavaScript implementation provides the basic functionality of the popular 2048 game and allows players to enjoy the puzzle-solving experience.
 
-here is the Demolink: "https://Peti51.github.io/js_2048_game/"
+In order to be able to start the project from vsCode ypou need to download the project to a folder named 'projects'.
+
+here is the Demolink: "https://Peti51.github.io/2048_js_game/"
