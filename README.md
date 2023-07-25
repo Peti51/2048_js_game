@@ -1,21 +1,16 @@
-This is a short introduction to a 2048 game implemented in JavaScript.
+This is a brief introduction to a JavaScript-based 2048 game.
 
-The game is built using the 4x4 grid layout and contains functionality to slide and merge tiles in four directions: left, right, up, and down. The goal of the game is to reach the tile with a value of 2048.
+The game uses a 4x4 grid layout and allows tiles to slide and merge in four directions: left, right, up, and down. The objective is to reach the 2048 tile.
 
-The game initializes with an empty board and displays a "Start" button. When the "Start" button is clicked, the game begins by generating two tiles with a value of 2 at random positions on the board.
+Upon starting, the game initializes with an empty board and a "Start" button. Clicking the "Start" button generates two tiles with a value of 2 at random positions.
 
-Variables and Data Structures: The game tracks 'score' and 'best' values, has a 4x4 'board' array, and uses 'rows' and 'columns' to define the grid dimensions.
+Data tracking includes the player's score and best score. DOM manipulation is utilized to interact with elements, and event listeners respond to button clicks and page load.
 
-DOM Manipulation: 'document.getElementById()' accesses elements, 'document.createElement()' dynamically creates elements, and 'element.innerText' and 'element.classList' update content and styles.
+Game logic involves tile generation, keyboard input handling, sliding and merging functions, and game over checks. Utility functions handle specific tasks.
 
-Event Listeners: The script responds to 'window.onload' and button clicks using event listeners.
+To start the project in VS Code, download it to a folder named 'projects'.
 
-Game Logic: The initialization function sets up the game, including hiding elements and resetting scores. 
-Tile generation randomly generates tiles with values. Keyboard input handling responds to arrow key presses. Sliding and merging functions control tile movements.
-Game over conditions are checked. Tile updates visually represent changes on the board.
+Username: Peti
+Password: 12345.
 
-Utility Functions: Functions filter zeros in a row and update tile visuals.
-
-In order to be able to start the project from vsCode ypou need to download the project to a folder named 'projects'.
-
-here is the Demolink: "https://Peti51.github.io/2048_js_game/"
+Demo Link: "https://Peti51.github.io/2048_js_game/". For technology details, refer to the original text.
