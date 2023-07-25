@@ -10,4 +10,4 @@ Game logic involves tile generation, keyboard input handling, sliding and mergin
 
 To start the project in VS Code, download it to a folder named 'projects'.
 
-Demo Link: "https://Peti51.github.io/2048_js_game/". For technology details, refer to the original text.
+Demo Link: "https://Peti51.github.io/2048_js_game/".
